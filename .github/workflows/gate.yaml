@@ -1,0 +1,12 @@
+name: theme gate
+
+on: [push, pull_request]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Presets override Schemify's base UI, so the gate reads the base first.
+      - run: curl -fsSL -o ui.records https://raw.githubusercontent.com/OpenFAT/Schemify/main/ui/default-plugin/ui.records
+      - run: for t in themes/*.records; do echo "== $t"; python3 tools/check_theme.py ui.records "$t" | tail -1 || exit 1; done
