@@ -1,0 +1,3 @@
+schemify 1 project
+
+plugin schemify-themes path schemify_themes.wasm

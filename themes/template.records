@@ -1,0 +1,323 @@
+# Schemify-Themes template: Schemify's Modern preset with each colour named by its role (an at-sign token).
+# tools/spicetify.py fills the tokens per scheme from themes/palettes.tsv; the plugin does the same at run time.
+
+
+
+
+style *
+  fg @text
+  accel-fg @muted
+  hover-bg @hover
+  active-bg @active
+  border-color @border
+
+style window
+  bg @bg
+
+style menubar
+  bg @panel
+
+style menu-title
+  hover-bg @hover
+  active-bg @active
+
+style menubar-dash
+  fg @dim2
+
+style menubar-button
+  bg @panel
+  hover-bg @hover
+
+style menu
+  bg @raised
+  border-color @border
+
+style item
+  hover-bg @active
+
+style separator
+  fg @border
+
+style toolbar
+  bg @panel
+
+style button
+  hover-bg @active
+  radius 4
+
+style tabs
+  bg @panel
+
+style tab
+  bg @panel
+  fg @muted
+  active-bg @active
+  active-fg @strong
+  border 0
+
+style tab-new
+  bg @panel
+  fg @muted
+  border 0
+
+style canvas
+  bg @bg
+
+style status
+  bg @panel
+
+style status-field
+  bg @bg
+  border-color @border
+
+style text_input
+  bg @bg
+  border-color @border
+
+style text_area
+  bg @bg
+  border-color @border
+
+style dialog
+  bg @raised
+  border-color @border
+  radius 6
+
+style dialog-button
+  bg @active
+  hover-bg @border
+  radius 4
+
+style ctx-menu
+  bg @raised
+  border-color @border
+
+style list-row
+  hover-bg @active
+  active-bg @accent_bg
+
+style keys-panel
+  bg @raised
+
+style view-switch
+  bg @raised
+  border-color @border
+  radius 6
+
+style viewsw
+  bg @raised
+  fg @muted
+  hover-bg @active
+  hover-fg @strong
+
+style viewsw-on
+  bg @accent_bg
+  fg @strong
+  hover-bg @accent_bg
+
+style viewsw-off
+  fg @dim3
+  hover-bg @raised
+
+
+style docs-pane
+  bg @panel
+  border-color @border
+
+style docs-bar
+  bg @raised
+
+style docs-block-sel
+  bg @accent_bg2
+
+style prose
+  fg @text
+
+style docs-var
+  bg @raised
+
+style docs-var-name
+  fg @accent
+
+style docs-expr
+  bg @bg
+  border-color @border
+
+style docs-hint
+  fg @muted
+
+style docs-plot
+  bg @bg
+  fg @text2
+
+style docs-toggle
+  border-color @border
+
+style docs-toggle-on
+  bg @accent_bg
+  fg @strong
+  hover-bg @accent_bg
+  border-color @accent_bg
+
+style docs-preview-cap
+  fg @muted
+
+style docs-preview
+  bg @preview
+  border-color @border
+
+style docs-source
+  border-color @border
+
+style text-view
+  bg @bg
+
+style text-view-body
+  fg @text
+
+
+style docs-value
+  fg @ok
+
+style docs-value-bad
+  fg @bad
+
+style docs-unverified
+  fg @warn
+
+style docs-staged-bar
+  bg @staged_bg
+  border-color @staged_line
+
+style docs-staged
+  fg @staged
+
+style bottom-pane
+  bg @panel
+  border-color @border
+
+style bottom-bar
+  bg @raised
+
+style check-error
+  fg @bad
+  hover-bg @bad_bg
+
+style check-warning
+  fg @warn
+  hover-bg @warn_bg
+
+style check-info
+  fg @accent
+
+style results-key
+  fg @muted
+
+style results-wide
+  fg @text
+
+style results-pass
+  fg @ok
+
+style results-fail
+  fg @bad
+
+style results-dim
+  fg @dim1
+
+style results-yield
+  fg @accent
+
+style results-log
+  fg @text2
+
+style results-pick
+  bg @raised
+
+style results-pick-sel
+  bg @accent_bg
+
+
+style canvas.dark.0
+  fg @c_bg
+style canvas.dark.1
+  fg @c_wire
+style canvas.dark.3
+  fg @c_text
+style canvas.dark.4
+  fg @c_symbol
+style canvas.dark.5
+  fg @c_pin
+style canvas.dark.grid
+  fg @c_grid
+style canvas.dark.sel
+  fg @c_sel
+style canvas.dark.8
+  fg @hl8
+style canvas.dark.9
+  fg @hl9
+style canvas.dark.10
+  fg @hl10
+style canvas.dark.12
+  fg @hl12
+style canvas.dark.13
+  fg @hl13
+style canvas.dark.15
+  fg @hl15
+style canvas.dark.17
+  fg @hl17
+style canvas.dark.21
+  fg @hl21
+
+style canvas.light.0
+  fg @c_bg
+style canvas.light.1
+  fg @c_wire
+style canvas.light.3
+  fg @c_text
+style canvas.light.4
+  fg @c_symbol
+style canvas.light.5
+  fg @c_pin
+style canvas.light.grid
+  fg @c_grid
+style canvas.light.sel
+  fg @c_sel
+style canvas.light.8
+  fg @hl8
+style canvas.light.9
+  fg @hl9
+style canvas.light.10
+  fg @hl10
+style canvas.light.12
+  fg @hl12
+style canvas.light.13
+  fg @hl13
+style canvas.light.15
+  fg @hl15
+style canvas.light.17
+  fg @hl17
+style canvas.light.21
+  fg @hl21
+
+
+style cell-pane
+  bg @panel
+  border-color @border
+
+style cell-section
+  fg @accent
+
+style cell-block
+  bg @raised
+
+style cell-key
+  fg @muted
+
+style cell-input
+  bg @bg
+  border-color @border
+
+style cell-body
+  bg @bg
+  border-color @border
